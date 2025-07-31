@@ -1,0 +1,81 @@
+# bitcoin-price-prediction
+A machine learning and time series forecasting project to predict Bitcoin prices using models like ARIMA, SARIMA, and XGBoost. Built during on-job training at First Quadrant Labs.
+# Bitcoin Price Prediction
+
+A machine learning and time series forecasting project to predict Bitcoin prices using models like **ARIMA**, **SARIMA**, and **XGBoost**. Built during on-job training at **First Quadrant Labs** under the **Boston Institute of Analytics**.
+
+## 📌 Objective
+To develop a robust model that forecasts Bitcoin prices using historical time series data, helping improve trading strategies, manage risk, and optimize returns.
+
+## 📊 Dataset
+- Source: Public historical cryptocurrency data
+- Columns included: `Date`, `Open`, `High`, `Low`, `Close`, `Volume`, `Market Cap`
+- Preprocessing: Date formatting, missing value handling, feature engineering
+
+## 🧠 Models Used
+- **ARIMA** (Autoregressive Integrated Moving Average)
+- **SARIMA** (Seasonal ARIMA)
+- **XGBoost Regressor** (with lagged features)
+- Model selection based on RMSE, MAE, and MAPE
+
+## ⚙️ Methodology
+1. **Exploratory Data Analysis (EDA)**
+   - Trend, seasonality, rolling statistics
+   - Correlation analysis and log transformations
+
+2. **Feature Engineering**
+   - Lag features
+   - Rolling means and percentage change
+   - Date-time based features (day, month, weekday)
+
+3. **Model Training and Evaluation**
+   - Train-test split (e.g. 80/20)
+   - Model fitting and diagnostics
+   - Metrics used: RMSE, MAE, MAPE
+
+4. **Visualization**
+   - Line charts for actual vs. predicted
+   - Residual plots and error analysis
+   - Model comparison graphs
+
+## 📈 Results
+- Best-performing model: `XGBoost Regressor` with engineered features
+- RMSE: _xx_, MAE: _xx_, MAPE: _xx_% *(replace with your results)*
+- Demonstrated strong forecasting performance over unseen data
+
+## 🛠 Tech Stack
+- Python (pandas, numpy, matplotlib, seaborn)
+- statsmodels, pmdarima, XGBoost
+- Jupyter Notebook
+
+## 📂 Folder Structure
+
+bitcoin-price-prediction/
+│
+├── data/ # Raw and processed datasets
+├── notebooks/ # Jupyter notebooks
+├── src/ # Python scripts
+├── visuals/ # Graphs and plots
+├── README.md # Project documentation
+
+
+## 🚀 How to Run
+```bash
+git clone https://github.com/sanjayjoshi15/bitcoin-price-prediction.git
+cd bitcoin-price-prediction
+pip install -r requirements.txt
+jupyter notebook notebooks/bitcoin_forecasting.ipynb
+📌 Future Work
+Include sentiment analysis (Twitter, Reddit) for price prediction
+
+Deep learning models (LSTM, GRU)
+
+Real-time forecasting dashboard using Streamlit
+
+📃 License
+This project is licensed under the MIT License.
+
+🙋‍♂️ Author
+Sanjay Joshi
+Data Scientist & Machine Learning Engineer
+LinkedIn | GitHub
